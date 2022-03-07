@@ -37,7 +37,6 @@ body {
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
-  border: 3px double #ed1c2e;
   padding: 5px;
   border-radius: 10px;
 }
@@ -226,7 +225,7 @@ body {
 
 #products .img_container img {
   max-width: 300px;
-  border-bottom: 3px double #ed1c2e;
+  border-bottom: 3px double whitesmoke;
   border-radius: -15px;
 }
 
