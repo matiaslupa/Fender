@@ -1,0 +1,470 @@
+body {
+  background-color: black;
+}
+
+/* Header Section */
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 3px solid white;
+  position: fixed;
+  z-index: 10;
+  background-color: hsla(225, 100%, 25%, 0.5);
+}
+
+#header .logo {
+  height: 40px;
+  margin: 10px 10px;
+}
+
+#header nav {
+  width: 400px;
+  margin-right: 20px;
+  opacity: 0.95;
+}
+
+#header ul {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+#header li a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#header li a:hover {
+  color: #ed1c2e;
+}
+
+#header li:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1024px) {
+  #header {
+    background-color: hsla(225, 100%, 25%, 0.9);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #header .logo {
+    height: 30px;
+  }
+
+  #header li a {
+    font-size: 1.3rem;
+    margin: 7px;
+  }
+
+  #header ul {
+    justify-content: flex-end;
+  }
+
+  #header nav {
+    margin-right: 10px;
+  }
+}
+
+/* Main Section */
+
+#main {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  border-bottom: 3px solid white;
+  position: relative;
+  top: 65px;
+}
+
+#main .slogan {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  background-image: url(../images/cassi-josh-lhnOvu72BM8-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% 50%;
+  transform: scaleX(-1);
+  opacity: 0.9;
+}
+
+#main .slogan_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 140px;
+  transform: scaleX(-1);
+  margin-left: 200px;
+  background-color: hsla(225, 100%, 25%, 0.54);
+  border: 2px solid whitesmoke;
+  border-left: transparent;
+  border-radius: 10px;
+  position: sticky;
+  top: 140px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+#main .slogan_container img {
+  max-width: 300px;
+  margin-right: 51px;
+  margin-top: 5px;
+}
+
+#main .slogan_container h2 {
+  color: #ed1c2e;
+  font-size: 2.1rem;
+  text-align: center;
+  margin-top: -24px;
+  margin-right: 16px;
+  z-index: 1;
+  margin-bottom: 5px;
+}
+
+#main .slogan_container .t {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1024px) {
+  #main {
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  #main {
+    top: 54px;
+    height: 500px;
+  }
+  #main .slogan_container {
+    position: static;
+    margin-top: 140px;
+    background-color: hsla(225, 100%, 25%, 0.54);
+    border: 1px solid #ed1c2e;
+    border-left: transparent;
+    border-radius: 5px;
+    max-width: 100%;
+    margin-left: 0px;
+    border-right: none;
+  }
+
+  #main .slogan {
+    background-position: 0% 100%;
+    background-size: cover;
+  }
+
+  #main .slogan_container img {
+    max-width: 250px;
+  }
+
+  #main .slogan_container h2 {
+    font-size: 1.8rem;
+    margin-right: 14px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  #main .slogan_container h2 {
+    font-size: 1.4rem;
+    margin-right: 65px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #main .slogan_container h2 {
+    display: none;
+  }
+  #main .slogan_container img {
+    margin-bottom: 5px;
+  }
+}
+
+/* Products Section */
+
+#products {
+  margin-top: 65px;
+  color: white;
+  background-color: hsla(225, 100%, 25%, 0.54);
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+#products .guitars {
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 40px;
+  font-weight: bold;
+}
+
+#products .flex_container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: auto;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+#products .img_container {
+  margin: 50px 50px;
+}
+
+#products .img_container:hover {
+  transform: scale(1.15);
+  color: #ed1c2e;
+}
+
+#products .img_container img {
+  max-width: 300px;
+  border-bottom: 3px solid whitesmoke;
+  border-radius: 40px;
+}
+
+#products .img_container a {
+  text-align: left;
+  font-weight: bold;
+  border: 3px solid #ed1c2e;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: -5px;
+  color: white;
+}
+
+#products .img_container a:hover {
+  color: #ed1c2e;
+}
+
+@media only screen and (max-width: 1154px) {
+  #products {
+    padding-bottom: 50px;
+  }
+
+  #products .img_container {
+    max-width: 350px;
+    margin: 50px 20px;
+  }
+  #products .img_container a {
+    border: none;
+  }
+
+  #products .img_container img {
+    border: none;
+    max-width: 350px;
+  }
+
+  #products .guitars {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  #products {
+    margin-top: 54px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #products {
+    padding-bottom: 30px;
+  }
+  #products .guitars {
+    padding-top: 50px;
+  }
+
+  #products .img_container {
+    max-width: 300px;
+  }
+
+  #products .img_container img {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 480) {
+  #products {
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+  }
+}
+
+/* Space */
+
+#space {
+  color: white;
+  width: 100%;
+  background-image: url(../images/cassi-josh-lhnOvu72BM8-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% 50%;
+  opacity: 0.9;
+  height: 50px;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  #space {
+    height: 30px;
+  }
+}
+
+/* Team Section */
+
+#team {
+  background-color: hsla(225, 100%, 25%, 0.54);
+  padding-bottom: 30px;
+}
+
+#team .team {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  font-weight: bold;
+}
+
+#team .team_container {
+  color: white;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-evenly;
+}
+
+#team .t_container {
+  width: 450px;
+  text-align: center;
+  margin: 30px;
+}
+
+#team .t_container img {
+  max-width: 200px;
+  border-radius: 15px;
+  border: 3px solid #ed1c2e;
+}
+
+#team .t_container h2 {
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+#team .t_container h3 {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  #team .team {
+    font-size: 3rem;
+  }
+
+  #team .t_container {
+    max-width: 200px;
+  }
+
+  #team .t_container img {
+    max-width: 200px;
+  }
+
+  #team .t_container h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  #team .t_container h3 {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+
+  #team .team_container {
+    margin-top: -20px;
+  }
+}
+
+/* Footer Section */
+
+#contact {
+  color: white;
+  width: 100%;
+  background-image: url(../images/cassi-josh-lhnOvu72BM8-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% 50%;
+  opacity: 0.96;
+  border: 3px solid white;
+  border-radius: 5px;
+  border-left: none;
+  border-right: none;
+}
+
+#contact .address_container {
+  display: flex;
+  background-color: hsla(225, 100%, 25%, 0.54);
+}
+
+#contact .address {
+  max-width: 400px;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+#contact .fender {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  justify-content: center;
+}
+
+#contact .fender .logo {
+  height: 50px;
+  margin: 10px 30px;
+}
+
+#contact .fender h5 {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+#contact .address_mobile {
+  display: none;
+}
+
+#contact .address_mobile h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 825px) {
+  #contact .fender h5 {
+    display: none;
+  }
+  #contact .address {
+    display: none;
+  }
+
+  #contact .address_mobile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  #contact .fender .logo {
+    display: none;
+  }
+}
